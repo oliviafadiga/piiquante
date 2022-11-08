@@ -8,10 +8,13 @@ const userRoutes = require("./routes/user");
 const sauceRoutes = require("./routes/sauce");
 
 mongoose
-  .connect(process.env.SECRET_DB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://oliviafdg:thibaulto1@cluster0.4z9i3ee.mongodb.net/?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => console.log("Connexion à MongoDB réussie !"))
   .catch(() => console.log("Connexion à MongoDB échouée !"));
 
