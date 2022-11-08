@@ -9,7 +9,7 @@ const sauceRoutes = require("./routes/sauce");
 
 mongoose
   .connect(
-    "mongodb+srv://oliviafdg:thibaulto1@cluster0.4z9i3ee.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://oliviafdg:pUcA4mAkHqWLNj7b@cluster0.4z9i3ee.mongodb.net/?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
